@@ -77,4 +77,10 @@ welcomePanel.onClickLogout(function() {
     welcomePanel.hide();
     initialPanel.show();
 });
-
+welcomePanel.onSearch(function(query){
+    try{
+      searchDuck(query);
+    }catch(error){
+      //test
+    }
+  })
