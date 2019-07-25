@@ -6,7 +6,10 @@
 .panel {
   border: 0.1rem solid gray;
   border-radius: 1rem;
-  background-color: lightgray;
+  display: flex;
+  width: 75%;
+  position: center;
+  background-color: white;
 }
 .panel--show {
   display: block;
@@ -81,6 +84,19 @@
 .feedback--error {
   background-color: red;
   color: white;
+}
+
+body {
+  background-image: url(https://cdn.pixabay.com/photo/2019/07/09/23/12/sea-4327598_960_720.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: verdana;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  font-family: verdana;
 }
 
 /*# sourceMappingURL=style.css.map */
