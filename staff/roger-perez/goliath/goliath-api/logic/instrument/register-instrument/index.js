@@ -14,7 +14,7 @@ const { Instrument } = require('../../../data')
 
 module.exports = function (name, style, audio) {
 
-    console.log("ffff " + name);
+
 
     validate.string(name, 'name')
     validate.string(style, 'style')

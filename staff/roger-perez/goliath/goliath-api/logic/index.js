@@ -11,4 +11,11 @@ module.exports = {
     retrieveInstrument: require('./instrument/retrieve-instrument'),
     unregisterInstrument: require('./instrument/unregister-instrument'),
     updateInstrument: require('./instrument/update-instrument'),
+
+      // TRACK  
+      registerTrack: require('./tracks/register-track'),
+      retrieveTrack: require('./tracks/retrieve-track'),
+      retrieveTrackByStyle: require('./tracks/retrieve-track-by-style')
+    //   unregisterTrack: require('./track/unregister-track'),
+    //   updateTrack: require('./track/update-track'),
 }

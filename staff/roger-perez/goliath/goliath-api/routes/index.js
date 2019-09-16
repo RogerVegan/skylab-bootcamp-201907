@@ -15,6 +15,12 @@ const retrieveInstrument = require('./instrument/retrieve-instrument')
 const unregisterInstrument = require('./instrument/unregister-instrument')
 const updateInstrument = require('./instrument/update-instrument')
 
+// TRACKS 
+const registerTrack = require('./tracks/register-track')
+const retrieveTrack = require('./tracks/retrieve-track')
+const retrieveTrackByStyle = require('./tracks/retrieve-track-by-style')
+// const unregisterInstrument = require('./instrument/unregister-instrument')
+// const updateInstrument = require('./instrument/update-instrument')
 
 
 const router = Router()
@@ -32,4 +38,17 @@ router.post('/instruments', jsonBodyParser, registerInstrument)
 router.get('/instruments/:id',  jsonBodyParser, retrieveInstrument)
 router.delete ('/instruments/:id',  jsonBodyParser, unregisterInstrument)
 router.patch ('/instruments/:id', jsonBodyParser, updateInstrument)
+
+/* TRACKS */
+router.post('/track', jsonBodyParser, registerTrack)
+router.get('/track/:id',  jsonBodyParser, retrieveTrack)
+router.get('/track/style/:style/tone/:tone',  jsonBodyParser, retrieveTrackByStyle)
+// router.delete ('/instruments/:id',  jsonBodyParser, unregisterInstrument)
+// router.patch ('/instruments/:id', jsonBodyParser, updateInstrument)
+
+
+
+
+
+
 module.exports = router
